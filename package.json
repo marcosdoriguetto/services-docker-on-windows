@@ -1,9 +1,9 @@
 {
-  "name": "my-electron-app",
+  "name": "services-docker-on-windows",
   "version": "1.0.0",
-  "description": "Hello World!",
+  "description": "Habilitar e desabilitar serviços responsáveis por fazer o Docker funcionar",
   "main": "main.js",
-  "author": "Jane Doe",
+  "author": "Marcos Doriguetto Fernandes",
   "license": "MIT",
   "devDependencies": {
     "electron": "^13.1.2",
@@ -13,6 +13,11 @@
     "start": "electron .",
     "build": "electron-builder build --win --ia32 --publish never"
   },
+  "bugs": {
+    "url": "https://github.com/marcosdoriguetto/services-docker-on-windows/issues"
+  },
+  "homepage": "https://github.com/marcosdoriguetto/services-docker-on-windows#readme",
+  "repository": "https://github.com/marcosdoriguetto/services-docker-on-windows",
   "dependencies": {
     "node-powershell": "^4.0.0",
     "typescript": "^4.3.2"
