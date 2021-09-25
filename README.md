@@ -1,4 +1,4 @@
-<h1 align="center">Toggle Windows resources to execute Docker</h1>
+<h1 align="center">Toggle Windows virtualization resources to execute Docker</h1>
 
 ## Install
 With the terminal open in the project, execute the following command to be able to install the dependencies:
@@ -6,15 +6,15 @@ With the terminal open in the project, execute the following command to be able 
 npm install or yarn
 ```
 
-## Usage
-Just click on the respective buttons to perform the desired task
-
-
 Then, generate your app with command bellow
 
 ```sh
 npm run build or yarn build
 ```
+
+## Usage
+Just click on the respective buttons to perform the desired task
+
 
 ## Author
 

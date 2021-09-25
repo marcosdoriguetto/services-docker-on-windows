@@ -4,12 +4,14 @@ function createWindow() {
     const win = new BrowserWindow({
         width: 400,
         height: 500,
+        icon: __dirname + "/favicon.ico",
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false
-        }
+        },
     })
-
+    
+    win.setMenu(null);
     win.loadFile('index.html')
 }
 
