@@ -1,59 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo&family=Libre+Baskerville:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chivo&family=Libre+Baskerville:wght@700&display=swap");
+
+:root {
+  --green: #56df95;
+  --red: #ff6464;
+}
 
 body {
-    height: 95vh;
-    font-family: 'Chivo', sans-serif;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  height: 95vh;
+  font-family: "Chivo", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
 }
 
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 button {
-    font-size: 16px;
-    width: 200px;
-    color: #ffff;
-    border-radius: 7px;
-    font-weight: bold;
-    padding: 16px 0;
-    transition: ease-in 0.2s;
-    cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+  color: #ffff;
+  border-radius: 7px;
+  font-weight: bold;
+  padding: 16px 0;
+  transition: ease-in 0.2s;
+  cursor: pointer;
 }
 
 .active {
-    border: 2px solid #56DF95;
-    background-color: #56DF95;
-    margin-bottom: 20px;
+  border: 2px solid var(--green);
+  background-color: var(--green);
+  margin-bottom: 20px;
 }
 
 .disable {
-    border: 2px solid #FF6464;
-    background-color: #FF6464;
+  border: 2px solid var(--red);
+  background-color: var(--red);
 }
 
-.active:hover, .disable:hover {
-    background-color: #ffff;
-    
+.active:hover,
+.disable:hover {
+  background-color: #ffff;
 }
 
 .active:hover {
-    color: #56DF95;
+  color: var(--green);
 }
 
 .disable:hover {
-    color: #FF6464;
+  color: var(--red);
 }
 
 .introduction {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }

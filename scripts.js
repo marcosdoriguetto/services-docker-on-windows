@@ -20,12 +20,14 @@ const runAsAdmin = async (command) => {
   return await shell.dispose()
 }
 
+const hyperActive = "dism.exe /online /enable-feature /featurename:Microsoft-Hyper-V /all /norestart";
 const linuxActive = "dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart";
 const machineActive = "dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart";
 const linuxDisable = "dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux /norestart";
 const machineDisable = "dism.exe /online /disable-feature /featurename:VirtualMachinePlatform /norestart";
+const hyperDisable = "dism.exe /online /disable-feature /featurename:Microsoft-Hyper-V /norestart";
 
 const buttonActive = document.querySelector('.active');
-buttonActive.onclick = () => runAsAdmin(`"${linuxActive}; ${machineActive}"`);
+buttonActive.onclick = () => runAsAdmin(`"${linuxActive}; ${machineActive}; ${hyperActive}"`);
 const buttonDisable = document.querySelector('.disable');
-buttonDisable.onclick = () => runAsAdmin(`"${linuxDisable}; ${machineDisable}"`);
+buttonDisable.onclick = () => runAsAdmin(`"${linuxDisable}; ${machineDisable}; ${hyperDisable}"`);
