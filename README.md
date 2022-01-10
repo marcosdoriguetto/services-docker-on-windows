@@ -12,6 +12,12 @@ Then, generate your app with command bellow
 npm run build or yarn build
 ```
 
+## What he does
+
+* Enable/Disable Hyper-V
+* Enable/Disable Virtual Machine Platform
+* Enable/Disable Subsystem Linux on Windows
+
 ## Usage
 Just click on the respective buttons to perform the desired task
 
